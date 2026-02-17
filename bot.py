@@ -93,10 +93,10 @@ def generate_referral_link(user_id):
 def get_main_menu(is_admin=False):
     markup = InlineKeyboardMarkup(row_width=2)
     markup.add(
-        InlineKeyboardButton("📦 Каталог товаров", callback_data="catalog"),
-        InlineKeyboardButton("💰 Пополнить баланс", callback_data="top_up"),
-        InlineKeyboardButton("👤 Мой профиль", callback_data="profile"),
-        InlineKeyboardButton("📩 Связаться", callback_data="contact")
+        InlineKeyboardButton("📦  Каталог товаров", callback_data="catalog"),
+        InlineKeyboardButton("💰  Пополнить баланс", callback_data="top_up"),
+        InlineKeyboardButton("👤  Мой профиль", callback_data="profile"),
+        InlineKeyboardButton("📩  Связаться", callback_data="contact")
     )
     if is_admin:  # Добавляем кнопку "Админ" только для администратора
         markup.add(InlineKeyboardButton("🔑 Админ", callback_data="admin_panel"))
